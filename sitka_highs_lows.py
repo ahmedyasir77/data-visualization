@@ -19,10 +19,12 @@ with open(filename) as f:
         highs.append(high)
         lows.append(low)
 
-# Plot the high and low temperatures.
+# Plot the high temperatures.
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
 ax.plot(dates, highs, c = 'red', alpha = 0.5)
+
+# Plot the low temperatures
 ax.plot(dates, lows, c = 'blue', alpha = 0.5)
 ax.fill_between(dates, highs, lows, facecolor = 'blue', alpha = 0.1)
 
