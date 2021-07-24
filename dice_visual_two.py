@@ -3,8 +3,8 @@ from plotly.graph_objs import Bar, Layout
 from plotly import offline
 
 # Create a D6 and a D10.
-die_1 = Die(8)
-die_2 = Die(8)
+die_1 = Die(6)
+die_2 = Die(10)
 
 # Make some rolls, and store results in a list.
 results = []
